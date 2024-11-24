@@ -7,21 +7,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Tela de Carregamento -->
   <div class="carregamento">
     <p class="texto-carregamento">Carregando...</p>
     <div class="barra-carregamento">
       <div class="progresso"></div>
     </div>
   </div>
-  
-  <!-- Conteúdo do Site -->
   <div class="container" style="display:none;">
     <h1 class="titulo-amor">EU TE AMO</h1>
     <div class="foto-container">
       <img src="https://i.ibb.co/DYwpWM4/1732423481244-9d635009-dd18-44ba-904f-9ca6230290f4-1-2.jpg" alt="Imagem" class="foto-nosso">
-      <button class="botao-audio" onclick="playAudio()">Tocar</button>
-      <audio id="audio" src="https://drive.google.com/uc?export=play&id=1tcnMCUZayvbQ4EIj2lQM0j7XjamumCHw" controls></audio>
+      <button class="botao-audio" onclick="document.getElementById('audio').play()">Tocar</button>
+      <button class="botao-audio" onclick="document.getElementById('audio').pause()">Pausar</button>
+      <audio id="audio" src="https://drive.google.com/uc?export=play&id=1tcnMCUZayvbQ4EIj2lQM0j7XjamumCHw" type="audio/mp3" controls loop></audio>
     </div>
     <h2 class="nomes">𝒩𝒾𝒸𝑜𝓁𝓁𝒶𝓈 𝑒 𝒯𝒽𝒶𝒾𝓈</h2>
     <p class="texto-amor">Linda, você é a presença que torna meu mundo mais vibrante...</p>
@@ -45,9 +43,8 @@
           <p>Segundos</p>
         </div>
       </div>
-      ```
-      </div>
-      </div>
-      <script src="script.js"></script>
-      </body>
-      </html>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
